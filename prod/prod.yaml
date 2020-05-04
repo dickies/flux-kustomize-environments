@@ -9,6 +9,7 @@ spec:
     spec:
       containers:
       - name: hello-kubernetes # (1)
+        image: paulbouwer/hello-kubernetes:1.8
         env:
         - name: MESSAGE
           value: Hello Kubernetes! - common prod
