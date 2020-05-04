@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: hello-kubernetes
-        image: stefanprodan/podinfo
+        image: stefanprodan/podinfo:1.4
         env:
         - name: MESSAGE
           value: Hello Kubernetes! - common prod
