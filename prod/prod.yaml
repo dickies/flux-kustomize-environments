@@ -6,12 +6,12 @@ metadata:
   namespace: common
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.hello-kubernetes: semver:~1.
+    fluxcd.io/tag.testprod: semver:~1
 spec:
   template:
     spec:
       containers:
-      - name: hello-kubernetes # (1)
+      - name: testprod
         image: stefanprodan/podinfo
         env:
         - name: MESSAGE
