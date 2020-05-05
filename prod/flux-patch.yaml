@@ -3,7 +3,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: common
-  namespace: common-prod
   annotations:
     fluxcd.io/automated: "true"
     fluxcd.io/tag.hello-kubernetes: semver:~3.1
