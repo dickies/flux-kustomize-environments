@@ -6,7 +6,7 @@ metadata:
   namespace: common
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.hello-kubernetes: semver:~1.4
+    #fluxcd.io/tag.hello-kubernetes: semver:~1.4
 spec:
   template:
     spec:
