@@ -5,6 +5,7 @@ metadata:
   name: common
   namespace: prod-common
   annotations:
+    fluxcd.io/automated: "true"
     fluxcd.io/tag.hello-kubernetes: semver:~3.1
 spec:
   template:
