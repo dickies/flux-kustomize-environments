@@ -4,12 +4,15 @@ kind: Deployment
 metadata:
   name: common
   namespace: common
+  annotations:
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.podinfod: semver:~1
 spec:
   template:
     spec:
       containers:
       - name: hello-kubernetes # (1)
-        image: paulbouwer/hello-kubernetes:1.8
+        image: stefanprodan/podinfo:1.4
         env:
         - name: MESSAGE
           value: Hello Kubernetes! - common prod
