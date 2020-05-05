@@ -5,8 +5,8 @@ metadata:
   name: common
   namespace: prod-common
   annotations:
-    flux.weave.works/automated: "true"
-    flux.weave.works/tag.hello-kubernetes: semver:~3.2
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.hello-kubernetes: semver:~3.2
 spec:
   template:
     spec:
