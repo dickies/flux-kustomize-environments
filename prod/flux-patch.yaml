@@ -5,13 +5,13 @@ metadata:
   name: common
   namespace: prod-common
   annotations:
-    fluxcd.io/automated: "true"
-    fluxcd.io/tag.hello-kubernetes: semver:~3.2
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.hello-kubernetes: semver:~3.2
 spec:
   template:
     spec:
       $setElementOrder/containers:
       - name: hello-kubernetes
       containers:
-      - image: stefanprodan/podinfo:3.2.0
+      - image: stefanprodan/podinfo:3.1.0
         name: hello-kubernetes
