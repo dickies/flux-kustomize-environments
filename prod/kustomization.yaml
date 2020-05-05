@@ -3,7 +3,5 @@ kind: Kustomization
 bases:
 - ../base/common
 namespace: prod-common
-patchesStrategicMerge:
-- prod.yaml
 resources:
 - namespace.yaml
