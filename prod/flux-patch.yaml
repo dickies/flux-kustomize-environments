@@ -12,5 +12,5 @@ spec:
       $setElementOrder/containers:
       - name: hello-kubernetes
       containers:
-      - image: stefanprodan/podinfo:3.2.3
+      - image: stefanprodan/podinfo:3.2.4
         name: hello-kubernetes
